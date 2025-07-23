@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/workspace/P2POverlayPoco/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

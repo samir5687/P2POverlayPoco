@@ -1,0 +1,8 @@
+tasks:
+  - init: |
+      sudo apt update
+      sudo apt install -y libpoco-dev cmake g++
+      rm -rf build
+      cmake -S . -B build
+      cmake --build build
+
