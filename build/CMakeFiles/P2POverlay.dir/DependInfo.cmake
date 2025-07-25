@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/P2POverlayPoco/client.cpp" "CMakeFiles/P2POverlayPoco.dir/client.cpp.o" "gcc" "CMakeFiles/P2POverlayPoco.dir/client.cpp.o.d"
-  "/workspace/P2POverlayPoco/main.cpp" "CMakeFiles/P2POverlayPoco.dir/main.cpp.o" "gcc" "CMakeFiles/P2POverlayPoco.dir/main.cpp.o.d"
+  "/workspace/P2POverlayPoco/ServerManager.cpp" "CMakeFiles/P2POverlay.dir/ServerManager.cpp.o" "gcc" "CMakeFiles/P2POverlay.dir/ServerManager.cpp.o.d"
+  "/workspace/P2POverlayPoco/main.cpp" "CMakeFiles/P2POverlay.dir/main.cpp.o" "gcc" "CMakeFiles/P2POverlay.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

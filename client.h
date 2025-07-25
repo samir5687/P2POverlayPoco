@@ -1,12 +1,12 @@
-#pragma once
-#include <Poco/Net/StreamSocket.h>
-#include <Poco/Runnable.h>
+#ifndef CLIENT_H
+#define CLIENT_H
 
-class ClientHandler : public Poco::Runnable {
+#include <string>
+
+class Client {
 public:
-    explicit ClientHandler(Poco::Net::StreamSocket client);
-    void run() override;
-
-private:
-    Poco::Net::StreamSocket _client;
+    Client(const std::string& host, int port);
+    void sendMessage(const std::string& message);
 };
+
+#endif

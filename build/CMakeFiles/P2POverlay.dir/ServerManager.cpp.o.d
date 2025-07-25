@@ -1,6 +1,7 @@
-CMakeFiles/P2POverlayPoco.dir/main.cpp.o: \
- /workspace/P2POverlayPoco/main.cpp /usr/include/stdc-predef.h \
- /usr/include/Poco/Net/ServerSocket.h /usr/include/Poco/Net/Net.h \
+CMakeFiles/P2POverlay.dir/ServerManager.cpp.o: \
+ /workspace/P2POverlayPoco/ServerManager.cpp /usr/include/stdc-predef.h \
+ /workspace/P2POverlayPoco/ServerManager.h \
+ /usr/include/Poco/Net/StreamSocket.h /usr/include/Poco/Net/Net.h \
  /usr/include/Poco/Foundation.h /usr/include/Poco/Config.h \
  /usr/include/Poco/Platform.h /usr/include/Poco/Platform_POSIX.h \
  /usr/include/Poco/Alignment.h /usr/include/c++/11/type_traits \
@@ -230,17 +231,17 @@ CMakeFiles/P2POverlayPoco.dir/main.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/Poco/Timespan.h \
  /usr/include/Poco/Timestamp.h /usr/include/c++/11/ctime \
  /usr/include/Poco/Buffer.h /usr/include/c++/11/cstring \
- /usr/include/Poco/Net/StreamSocket.h /usr/include/Poco/FIFOBuffer.h \
- /usr/include/Poco/BasicEvent.h /usr/include/Poco/AbstractEvent.h \
- /usr/include/Poco/SingletonHolder.h /usr/include/Poco/Mutex.h \
- /usr/include/Poco/ScopedLock.h /usr/include/Poco/Mutex_POSIX.h \
- /usr/include/Poco/SharedPtr.h /usr/include/Poco/ActiveResult.h \
- /usr/include/Poco/Event.h /usr/include/Poco/Event_POSIX.h \
- /usr/include/Poco/ActiveMethod.h /usr/include/Poco/ActiveRunnable.h \
- /usr/include/Poco/Runnable.h /usr/include/Poco/ActiveStarter.h \
- /usr/include/Poco/ThreadPool.h /usr/include/Poco/Thread.h \
- /usr/include/Poco/Thread_POSIX.h /usr/include/Poco/SignalHandler.h \
- /usr/include/setjmp.h /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/include/Poco/FIFOBuffer.h /usr/include/Poco/BasicEvent.h \
+ /usr/include/Poco/AbstractEvent.h /usr/include/Poco/SingletonHolder.h \
+ /usr/include/Poco/Mutex.h /usr/include/Poco/ScopedLock.h \
+ /usr/include/Poco/Mutex_POSIX.h /usr/include/Poco/SharedPtr.h \
+ /usr/include/Poco/ActiveResult.h /usr/include/Poco/Event.h \
+ /usr/include/Poco/Event_POSIX.h /usr/include/Poco/ActiveMethod.h \
+ /usr/include/Poco/ActiveRunnable.h /usr/include/Poco/Runnable.h \
+ /usr/include/Poco/ActiveStarter.h /usr/include/Poco/ThreadPool.h \
+ /usr/include/Poco/Thread.h /usr/include/Poco/Thread_POSIX.h \
+ /usr/include/Poco/SignalHandler.h /usr/include/setjmp.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
@@ -251,8 +252,12 @@ CMakeFiles/P2POverlayPoco.dir/main.cpp.o: \
  /usr/include/Poco/NotificationStrategy.h \
  /usr/include/Poco/AbstractDelegate.h /usr/include/Poco/Format.h \
  /usr/include/Poco/Any.h /usr/include/Poco/MetaProgramming.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/Poco/Net/ServerSocket.h \
  /usr/include/Poco/Net/SocketStream.h \
  /usr/include/Poco/BufferedBidirectionalStreamBuf.h \
  /usr/include/Poco/BufferAllocator.h /usr/include/Poco/StreamUtil.h \
  /usr/include/c++/11/istream /usr/include/c++/11/bits/istream.tcc \
- /usr/include/c++/11/iostream /workspace/P2POverlayPoco/client.h
+ /usr/include/c++/11/iostream

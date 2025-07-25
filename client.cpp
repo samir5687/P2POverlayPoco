@@ -1,28 +1,20 @@
 #include "client.h"
+#include <Poco/Net/StreamSocket.h>
+#include <Poco/Net/SocketAddress.h>
 #include <Poco/Net/SocketStream.h>
 #include <iostream>
 
-ClientHandler::ClientHandler(Poco::Net::StreamSocket client)
-    : _client(client) {}
+using namespace Poco::Net;
+using namespace std;
 
-void ClientHandler::run() {
-    try {
-        Poco::Net::SocketStream stream(_client);
-        std::cout << "Client connected: " << _client.peerAddress().toString() << std::endl;
+Client::Client(const string& host, int port) {
+    SocketAddress sa(host, port);
+    StreamSocket socket(sa);
+    SocketStream stream(socket);
+    stream << "REGISTER:Client1" << endl;
+    cout << "Client sent registration." << endl;
+}
 
-        stream << "Welcome! Send 'REGISTER' to join the overlay." << std::endl;
-
-        std::string message;
-        while (std::getline(stream, message)) {
-            if (message == "REGISTER") {
-                std::cout << "Node registered: " << _client.peerAddress().toString() << std::endl;
-                stream << "REGISTERED: " << _client.peerAddress().toString() << std::endl;
-            } else {
-                std::cout << "Received: " << message << std::endl;
-                stream << "Echo: " << message << std::endl;
-            }
-        }
-    } catch (Poco::Exception& ex) {
-        std::cerr << "Client error: " << ex.displayText() << std::endl;
-    }
+void Client::sendMessage(const string& message) {
+    // Placeholder for sending messages
 }

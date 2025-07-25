@@ -171,6 +171,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/P2POverlayPoco.dir/DependInfo.cmake"
+  "CMakeFiles/P2POverlay.dir/DependInfo.cmake"
   "CMakeFiles/ClientApp.dir/DependInfo.cmake"
   )

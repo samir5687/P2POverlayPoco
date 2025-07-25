@@ -1,33 +1,29 @@
 cmake_minimum_required(VERSION 3.10)
 project(P2POverlayPoco)
 
-# Use C++17
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Find Poco libraries
-find_package(Poco REQUIRED Net Util Foundation)
+find_package(Poco REQUIRED Foundation Net Util)
 
-# Server executable
-add_executable(P2POverlayPoco
+include_directories(${Poco_INCLUDE_DIRS})
+
+add_executable(P2POverlay
     main.cpp
-    client.cpp
-    client.h
+    ServerManager.cpp
 )
 
-target_link_libraries(P2POverlayPoco
+target_link_libraries(P2POverlay
+    Poco::Foundation
     Poco::Net
     Poco::Util
-    Poco::Foundation
 )
 
-# Client executable
 add_executable(ClientApp
-    ClientApp.cpp
+    main_client.cpp
+    client.cpp
 )
 
 target_link_libraries(ClientApp
-    Poco::Net
-    Poco::Util
     Poco::Foundation
+    Poco::Net
 )

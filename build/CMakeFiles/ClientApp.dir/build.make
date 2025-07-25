@@ -72,39 +72,51 @@ include CMakeFiles/ClientApp.dir/flags.make
 CMakeFiles/ClientApp.dir/codegen:
 .PHONY : CMakeFiles/ClientApp.dir/codegen
 
-CMakeFiles/ClientApp.dir/ClientApp.cpp.o: CMakeFiles/ClientApp.dir/flags.make
-CMakeFiles/ClientApp.dir/ClientApp.cpp.o: /workspace/P2POverlayPoco/ClientApp.cpp
-CMakeFiles/ClientApp.dir/ClientApp.cpp.o: CMakeFiles/ClientApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/P2POverlayPoco/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClientApp.dir/ClientApp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClientApp.dir/ClientApp.cpp.o -MF CMakeFiles/ClientApp.dir/ClientApp.cpp.o.d -o CMakeFiles/ClientApp.dir/ClientApp.cpp.o -c /workspace/P2POverlayPoco/ClientApp.cpp
+CMakeFiles/ClientApp.dir/main_client.cpp.o: CMakeFiles/ClientApp.dir/flags.make
+CMakeFiles/ClientApp.dir/main_client.cpp.o: /workspace/P2POverlayPoco/main_client.cpp
+CMakeFiles/ClientApp.dir/main_client.cpp.o: CMakeFiles/ClientApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/P2POverlayPoco/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ClientApp.dir/main_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClientApp.dir/main_client.cpp.o -MF CMakeFiles/ClientApp.dir/main_client.cpp.o.d -o CMakeFiles/ClientApp.dir/main_client.cpp.o -c /workspace/P2POverlayPoco/main_client.cpp
 
-CMakeFiles/ClientApp.dir/ClientApp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClientApp.dir/ClientApp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/P2POverlayPoco/ClientApp.cpp > CMakeFiles/ClientApp.dir/ClientApp.cpp.i
+CMakeFiles/ClientApp.dir/main_client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClientApp.dir/main_client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/P2POverlayPoco/main_client.cpp > CMakeFiles/ClientApp.dir/main_client.cpp.i
 
-CMakeFiles/ClientApp.dir/ClientApp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClientApp.dir/ClientApp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/P2POverlayPoco/ClientApp.cpp -o CMakeFiles/ClientApp.dir/ClientApp.cpp.s
+CMakeFiles/ClientApp.dir/main_client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClientApp.dir/main_client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/P2POverlayPoco/main_client.cpp -o CMakeFiles/ClientApp.dir/main_client.cpp.s
+
+CMakeFiles/ClientApp.dir/client.cpp.o: CMakeFiles/ClientApp.dir/flags.make
+CMakeFiles/ClientApp.dir/client.cpp.o: /workspace/P2POverlayPoco/client.cpp
+CMakeFiles/ClientApp.dir/client.cpp.o: CMakeFiles/ClientApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/P2POverlayPoco/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ClientApp.dir/client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ClientApp.dir/client.cpp.o -MF CMakeFiles/ClientApp.dir/client.cpp.o.d -o CMakeFiles/ClientApp.dir/client.cpp.o -c /workspace/P2POverlayPoco/client.cpp
+
+CMakeFiles/ClientApp.dir/client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ClientApp.dir/client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspace/P2POverlayPoco/client.cpp > CMakeFiles/ClientApp.dir/client.cpp.i
+
+CMakeFiles/ClientApp.dir/client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ClientApp.dir/client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspace/P2POverlayPoco/client.cpp -o CMakeFiles/ClientApp.dir/client.cpp.s
 
 # Object files for target ClientApp
 ClientApp_OBJECTS = \
-"CMakeFiles/ClientApp.dir/ClientApp.cpp.o"
+"CMakeFiles/ClientApp.dir/main_client.cpp.o" \
+"CMakeFiles/ClientApp.dir/client.cpp.o"
 
 # External object files for target ClientApp
 ClientApp_EXTERNAL_OBJECTS =
 
-ClientApp: CMakeFiles/ClientApp.dir/ClientApp.cpp.o
+ClientApp: CMakeFiles/ClientApp.dir/main_client.cpp.o
+ClientApp: CMakeFiles/ClientApp.dir/client.cpp.o
 ClientApp: CMakeFiles/ClientApp.dir/build.make
 ClientApp: /usr/lib/x86_64-linux-gnu/libPocoNet.so.80
-ClientApp: /usr/lib/x86_64-linux-gnu/libPocoUtil.so.80
-ClientApp: /usr/lib/x86_64-linux-gnu/libPocoXML.so.80
-ClientApp: /usr/lib/x86_64-linux-gnu/libexpat.so
-ClientApp: /usr/lib/x86_64-linux-gnu/libPocoJSON.so.80
 ClientApp: /usr/lib/x86_64-linux-gnu/libPocoFoundation.so.80
 ClientApp: /usr/lib/x86_64-linux-gnu/libpcre.so
 ClientApp: /usr/lib/x86_64-linux-gnu/libz.so
 ClientApp: CMakeFiles/ClientApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspace/P2POverlayPoco/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ClientApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspace/P2POverlayPoco/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ClientApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClientApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

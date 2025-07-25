@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named P2POverlayPoco
+# Target rules for targets named P2POverlay
 
 # Build rule for target.
-P2POverlayPoco: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 P2POverlayPoco
-.PHONY : P2POverlayPoco
+P2POverlay: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 P2POverlay
+.PHONY : P2POverlay
 
 # fast build rule for target.
-P2POverlayPoco/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlayPoco.dir/build.make CMakeFiles/P2POverlayPoco.dir/build
-.PHONY : P2POverlayPoco/fast
+P2POverlay/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlay.dir/build.make CMakeFiles/P2POverlay.dir/build
+.PHONY : P2POverlay/fast
 
 #=============================================================================
 # Target rules for targets named ClientApp
@@ -142,36 +142,36 @@ ClientApp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/build
 .PHONY : ClientApp/fast
 
-ClientApp.o: ClientApp.cpp.o
-.PHONY : ClientApp.o
+ServerManager.o: ServerManager.cpp.o
+.PHONY : ServerManager.o
 
 # target to build an object file
-ClientApp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/ClientApp.cpp.o
-.PHONY : ClientApp.cpp.o
+ServerManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlay.dir/build.make CMakeFiles/P2POverlay.dir/ServerManager.cpp.o
+.PHONY : ServerManager.cpp.o
 
-ClientApp.i: ClientApp.cpp.i
-.PHONY : ClientApp.i
+ServerManager.i: ServerManager.cpp.i
+.PHONY : ServerManager.i
 
 # target to preprocess a source file
-ClientApp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/ClientApp.cpp.i
-.PHONY : ClientApp.cpp.i
+ServerManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlay.dir/build.make CMakeFiles/P2POverlay.dir/ServerManager.cpp.i
+.PHONY : ServerManager.cpp.i
 
-ClientApp.s: ClientApp.cpp.s
-.PHONY : ClientApp.s
+ServerManager.s: ServerManager.cpp.s
+.PHONY : ServerManager.s
 
 # target to generate assembly for a file
-ClientApp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/ClientApp.cpp.s
-.PHONY : ClientApp.cpp.s
+ServerManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlay.dir/build.make CMakeFiles/P2POverlay.dir/ServerManager.cpp.s
+.PHONY : ServerManager.cpp.s
 
 client.o: client.cpp.o
 .PHONY : client.o
 
 # target to build an object file
 client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlayPoco.dir/build.make CMakeFiles/P2POverlayPoco.dir/client.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/client.cpp.o
 .PHONY : client.cpp.o
 
 client.i: client.cpp.i
@@ -179,7 +179,7 @@ client.i: client.cpp.i
 
 # target to preprocess a source file
 client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlayPoco.dir/build.make CMakeFiles/P2POverlayPoco.dir/client.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/client.cpp.i
 .PHONY : client.cpp.i
 
 client.s: client.cpp.s
@@ -187,7 +187,7 @@ client.s: client.cpp.s
 
 # target to generate assembly for a file
 client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlayPoco.dir/build.make CMakeFiles/P2POverlayPoco.dir/client.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/client.cpp.s
 .PHONY : client.cpp.s
 
 main.o: main.cpp.o
@@ -195,7 +195,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlayPoco.dir/build.make CMakeFiles/P2POverlayPoco.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlay.dir/build.make CMakeFiles/P2POverlay.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -203,7 +203,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlayPoco.dir/build.make CMakeFiles/P2POverlayPoco.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlay.dir/build.make CMakeFiles/P2POverlay.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -211,8 +211,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlayPoco.dir/build.make CMakeFiles/P2POverlayPoco.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P2POverlay.dir/build.make CMakeFiles/P2POverlay.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+main_client.o: main_client.cpp.o
+.PHONY : main_client.o
+
+# target to build an object file
+main_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/main_client.cpp.o
+.PHONY : main_client.cpp.o
+
+main_client.i: main_client.cpp.i
+.PHONY : main_client.i
+
+# target to preprocess a source file
+main_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/main_client.cpp.i
+.PHONY : main_client.cpp.i
+
+main_client.s: main_client.cpp.s
+.PHONY : main_client.s
+
+# target to generate assembly for a file
+main_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ClientApp.dir/build.make CMakeFiles/ClientApp.dir/main_client.cpp.s
+.PHONY : main_client.cpp.s
 
 # Help Target
 help:
@@ -223,16 +247,19 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ClientApp"
-	@echo "... P2POverlayPoco"
-	@echo "... ClientApp.o"
-	@echo "... ClientApp.i"
-	@echo "... ClientApp.s"
+	@echo "... P2POverlay"
+	@echo "... ServerManager.o"
+	@echo "... ServerManager.i"
+	@echo "... ServerManager.s"
 	@echo "... client.o"
 	@echo "... client.i"
 	@echo "... client.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main_client.o"
+	@echo "... main_client.i"
+	@echo "... main_client.s"
 .PHONY : help
 
 

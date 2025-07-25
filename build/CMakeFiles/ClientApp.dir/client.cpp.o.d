@@ -1,9 +1,6 @@
-CMakeFiles/ClientApp.dir/ClientApp.cpp.o: \
- /workspace/P2POverlayPoco/ClientApp.cpp /usr/include/stdc-predef.h \
- /usr/include/Poco/Net/StreamSocket.h /usr/include/Poco/Net/Net.h \
- /usr/include/Poco/Foundation.h /usr/include/Poco/Config.h \
- /usr/include/Poco/Platform.h /usr/include/Poco/Platform_POSIX.h \
- /usr/include/Poco/Alignment.h /usr/include/c++/11/type_traits \
+CMakeFiles/ClientApp.dir/client.cpp.o: \
+ /workspace/P2POverlayPoco/client.cpp /usr/include/stdc-predef.h \
+ /workspace/P2POverlayPoco/client.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -14,8 +11,8 @@ CMakeFiles/ClientApp.dir/ClientApp.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h /usr/include/Poco/Bugcheck.h \
- /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/pstl/pstl_config.h \
+ /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/stl_algobase.h \
@@ -25,6 +22,7 @@ CMakeFiles/ClientApp.dir/ClientApp.cpp.o: \
  /usr/include/c++/11/ext/type_traits.h \
  /usr/include/c++/11/ext/numeric_traits.h \
  /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/stl_iterator_base_types.h \
  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/11/bits/concept_check.h \
@@ -129,10 +127,14 @@ CMakeFiles/ClientApp.dir/ClientApp.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
- /usr/include/c++/11/bits/basic_string.tcc /usr/include/Poco/Types.h \
- /usr/include/Poco/Net/Socket.h /usr/include/Poco/Net/SocketImpl.h \
- /usr/include/Poco/Net/SocketDefs.h /usr/include/c++/11/vector \
- /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/basic_string.tcc \
+ /usr/include/Poco/Net/StreamSocket.h /usr/include/Poco/Net/Net.h \
+ /usr/include/Poco/Foundation.h /usr/include/Poco/Config.h \
+ /usr/include/Poco/Platform.h /usr/include/Poco/Platform_POSIX.h \
+ /usr/include/Poco/Alignment.h /usr/include/Poco/Bugcheck.h \
+ /usr/include/Poco/Types.h /usr/include/Poco/Net/Socket.h \
+ /usr/include/Poco/Net/SocketImpl.h /usr/include/Poco/Net/SocketDefs.h \
+ /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/unistd.h \

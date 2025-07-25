@@ -1,2 +1,2 @@
-# Empty dependencies file for P2POverlayPoco.
+# Empty dependencies file for P2POverlay.
 # This may be replaced when dependencies are built.
